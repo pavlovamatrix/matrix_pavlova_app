@@ -1,0 +1,57 @@
+.years-table_container {
+  padding: 15px;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    letter-spacing: 0px;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+
+  tr {
+    width: 100%;
+  }
+
+
+  th, td {
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    height: 19px;
+    width: 12.5%;
+    text-align: center;
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+
+  th {
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+
+  .years-period {
+    background-color: #ECFAFC;
+  }
+
+  .energy-value {
+    background-color: #FFFAEC;
+  }
+
+  .th {
+    background-color: #F4F4F6;
+    height: 24px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .years-table_container {
+    padding: 5px;
+
+    .th {
+      font-size: 11px;
+    }
+  }
+
+}

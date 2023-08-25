@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+
+  .form_h1, .form_h2 {
+    font-family: 'Cormorant', serif;
+    margin: 0;
+    color: #0A393F;
+    font-weight: normal;
+  }
+}
+
+.label {
+  margin-top: 15px;
+  font-family: 'Playfair Display', serif;
+
+}
+
+.MuiInputBase-input {
+  background: white;
+}
+
+.MuiTextField-root {
+  background: white;
+}
+
+#form_btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 470px) {
+  .form {
+    .form_h1 {
+      font-size: 23px;
+      text-align: center;
+    }
+    .form_h2 {
+      font-size: 20px;
+    }
+  }
+
+}

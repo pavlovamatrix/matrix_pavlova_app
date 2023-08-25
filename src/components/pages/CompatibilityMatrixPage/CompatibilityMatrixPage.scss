@@ -1,0 +1,202 @@
+
+.matrixs_container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+
+
+  .matrixs-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .matrix-result {
+    //border: 1px solid #690080;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: 1px solid rgba(17, 66, 87, 0.27);
+    padding-top: 45px;
+    height: 650px;
+    margin-top: 15px;
+
+    .purposes {
+      position: absolute;
+      left: 50%;
+      top: 25%;
+      width: 500px;
+      .table-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      h3 {
+        font-family: 'Playfair Display', serif;
+        margin: 0;
+      }
+
+      .purposes_top {
+        //border: 1px solid yellowgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        gap: 25px;
+
+        .purpose {
+          //border: 1px solid blue;
+
+          .word {
+            padding-left: 10px;
+          }
+
+          .circle_purpose {
+            width: 30px;
+            height: 30px;
+            font-size: 18px;
+          }
+        }
+
+      }
+
+      .purpose_general {
+        //border: 1px solid blue;
+        height: 80px;
+        margin-top: -5px;
+        margin-bottom: -20px;
+
+        .circle_solo {
+          .circle {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 30px;
+            height: 30px;
+            background-color: #F4F4F3;
+            font-size: 18px;
+          }
+
+        }
+      }
+    }
+
+    .matrix-compatibility {
+      min-height: 610px;
+      height: 610px;
+      overflow: visible;
+      //border: 1px solid green;
+    }
+  }
+
+  .btn_compatibility-matrix {
+    width: 250px;
+    height: 45px;
+    background-color: #114257;
+
+    &:hover {
+      background-color: rgba(17, 66, 87, 0.7);
+
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+
+  .matrixs_container {
+    .table-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 140px;
+      gap: 15px;
+    }
+
+    .matrixs-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      @media screen and (max-width: 800px) {
+        width: 460px;
+      }
+    }
+
+    .matrix-result {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid rgba(17, 66, 87, 0.27);
+      padding-top: 0px;
+
+
+      @media screen and (max-width: 800px) {
+        height: 780px;
+        .matrix-compatibility {
+          height: 300px;
+        }
+        .purposes {
+          width: 100%;
+          position: relative;
+          left: 0%;
+          top: -1%;
+
+          .table-wrapper {
+            gap: 10px;
+          }
+
+          h3 {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+          }
+
+          .purposes_top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            gap: 5px;
+
+            .purpose {
+              //border: 1px solid blue;
+              .circle_purpose {
+                width: 30px;
+                height: 30px;
+
+              }
+            }
+
+          }
+
+          .purpose_general {
+            //border: 1px solid blue;
+            height: 80px;
+            margin-top: -5px;
+            margin-bottom: -20px;
+
+            .circle_solo {
+              .circle {
+                width: 30px;
+                height: 30px;
+                background-color: #F4F4F3;
+                font-size: 18px;
+              }
+
+            }
+          }
+        }
+      }
+
+      .matrix-compatibility {
+        min-height: 300px;
+        overflow: visible;
+
+        @media screen and (max-width: 800px) {
+          min-height: 345px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+.table_container {
+  padding: 15px;
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 15px;
+  letter-spacing: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+tr {
+  width: 100%;
+}
+
+
+th, td {
+  border: 1px solid rgba(0, 0, 0, 0);
+  height: 60px;
+  text-align: center;
+  letter-spacing: 0px;
+  font-family: 'Playfair Display', serif;
+}
+
+.th_table {
+  font-weight: normal;
+  font-size: 17px;
+}
+
+td span {
+  color: #331B07;
+  font-family: 'Playfair Display', serif;
+}
+
+.th_header,
+.th_footer {
+  //background: rgba(194, 127, 236, 0.18);
+  background: #F2F2F4;
+
+  font-weight: normal;
+  font-size: 17px;
+
+  .td_number {
+    background: #C6C8D4;
+  }
+}
+
+.th_footer {
+  font-weight: normal;
+}
+
+
+.th_small {
+  width: 95px;
+}
+
+.th_large {
+  width: 180px;
+  text-align: start;
+}
+
+.th_xs {
+  width: 32px;
+  font-size: 40px;
+}
+
+.ch-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: start;
+  padding-left: 10px;
+  position: relative;
+
+  .tooltip {
+
+  }
+
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding-left: 10px;
+    position: relative;
+  }
+}
+
+
+.td_number {
+  span {
+    font-size: 17px;
+    color: #ffffff;
+  }
+}
+
+.ch-info {
+  font-size: 11px;
+}
+
+.tr_seven {
+  background: #EBE1F6;
+  color: white;
+
+  .td_number {
+    background: #8847A3;
+  }
+}
+
+.tr_six {
+  background: #E5EAFE;
+
+  .td_number {
+    background: #526DFC;
+  }
+}
+
+.tr_five {
+  background: #E0F8FA;
+
+  .td_number {
+    background: #47CFDD;
+  }
+}
+
+.tr_eight {
+  background: #F0FBEA;
+
+  .td_number {
+    background: #B0DE61;
+  }
+}
+
+.tr_three {
+  background: #FFF5D9;
+
+  .td_number {
+    background: #FDCA46;
+  }
+}
+
+.tr_two {
+  background: #FEEDD1;
+
+  .td_number {
+    background: #DFA103;
+  }
+}
+
+.tr_one {
+  background: #FDE4E8;
+
+  .td_number {
+    background: #EE4041;
+  }
+}
+
+.tr_sum {
+  background: #F2F2F4;
+
+  .td_number {
+    background: #C6C8D4;
+  }
+}
+
+.td_sum {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+
+  .th_table {
+    font-size: 15px;
+  }
+
+  .ch-name {
+    font-size: 14px;
+
+    .tooltip {
+
+    }
+  }
+
+  .th_small {
+    width: 50px;
+    padding: 0 9px;
+  }
+  .th_large {
+    width: 130px;
+  }
+  .ch-info {
+    font-size: 6px;
+  }
+}
